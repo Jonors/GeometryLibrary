@@ -1,22 +1,21 @@
-## About The Project
-(built With i.e., what kinds of environment?)
+# GeometryLibrary
 
-## Getting Started 
-(how to install and run your program)
+## About The Project
+GeometryLibrary is a robust, lightweight C# class library designed for frictionless 3D geometric object management. Built on an "Invisible Architecture" philosophy, it hides complex vector math, cross-products, and spatial array management behind a clean, tactile API. 
+
+The library supports generating random `Tetrahedron`, `Cuboid`, and `Cylinder` objects, and allows for seamless aggregation into `CompositeShape` structures using intuitive operator overloading.
+
+### Built With
+* .NET SDK (C#)
+
+## Getting Started
+To use this library in your own .NET ecosystem, you simply need to reference it in your executing project.
 
 ### Prerequisites
+* .NET SDK installed on your development machine.
+
 ### Installation
-### Usage
-(show useful examples of how a project can be used)
-
-## Roadmap 
-(what have been implemented and what are the planed features.)
-
-## Contributing 
-(encourage people to work on your project)
-
-## License 
-(your project license)
-
-## Contact
-## Acknowledgments
+1. Ensure the `GeometryLibrary` folder is within your solution.
+2. Build the library via the .NET CLI:
+   ```bash
+   dotnet build GeometryLibrary
