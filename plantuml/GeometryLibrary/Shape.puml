@@ -1,0 +1,11 @@
+@startuml
+abstract class Shape {
+    + Name : string <<get>> <<protected set>> = "BasicShape"
+    + {abstract} Volume() : double
+    + {abstract} SurfaceArea() : double
+    + CompareTo(other:Shape?) : int
+}
+class "IComparable`1"<T> {
+}
+"IComparable`1" "<Shape>" <|-- Shape
+@enduml

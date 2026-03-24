@@ -34,3 +34,6 @@ The development process presented two primary challenges, both of which were sol
 * Microsoft C# Documentation (Operator Overloading, Interfaces, Pattern Matching)
 * Linear Algebra Mathematics (Scalar Triple Product for Tetrahedron Volume)
 * Standard Geometric Formulas (Surface Area and Volume for Prisms and Cylinders)
+
+## Class Diagram
+![UML Class Diagram for GeometryLibrary](ClassDiagram.png)

@@ -1,0 +1,15 @@
+@startuml
+!include ./Computation/Program.puml
+!include ./GeometryLibrary/CompositeShape.puml
+!include ./GeometryLibrary/Vertecies.puml
+!include ./GeometryLibrary/Tetrahedron.puml
+!include ./GeometryLibrary/Cylinder.puml
+!include ./GeometryLibrary/Cuboid.puml
+!include ./GeometryLibrary/Shape.puml
+!include ./Computation/obj/Debug/net10.0/Computation.AssemblyInfo.puml
+!include ./Computation/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.puml
+!include ./Computation/obj/Debug/net10.0/Computation.GlobalUsings.g.puml
+!include ./GeometryLibrary/obj/Debug/net10.0/GeometryLibrary.AssemblyInfo.puml
+!include ./GeometryLibrary/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.puml
+!include ./GeometryLibrary/obj/Debug/net10.0/GeometryLibrary.GlobalUsings.g.puml
+@enduml

@@ -17,10 +17,12 @@ You must have the .NET SDK installed on your local machine to compile and run th
 1. Extract the provided zip file (`Assignment2_MatriculationNumber_FirstName_LastName.zip`).
 2. Open your preferred terminal.
 3. Navigate to the root folder (`Computaion/`)
+4. ```bash
+dotnet build
    
 ### Usage
 This application is designed to run as an automated test script. It does not require manual coordinate input; it utilizes random generation to automatically build, combine, and sort shapes.
 
-To execute the program, run the following command from the root directory:
+To execute the program, run the following command from the Computation directory:
 ```bash
-dotnet run --project Computation
+dotnet run 

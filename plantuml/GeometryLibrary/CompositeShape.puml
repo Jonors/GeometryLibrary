@@ -1,0 +1,12 @@
+@startuml
+class CompositeShape {
+    + CompositeShape(n:int)
+    + IsIn(s:Shape) : int
+    + Add(s:Shape) : void
+    + Sort() : void
+    + <<override>> SurfaceArea() : double
+    + <<override>> Volume() : double
+    + Count : int <<get>>
+}
+Shape <|-- CompositeShape
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+class Cuboid {
+    + Cuboid()
+    + Cuboid(other:Cuboid)
+    + Centroid() : Vertex
+    + <<override>> SurfaceArea() : double
+    + <<override>> Volume() : double
+    + <<override>> Equals(obj:object?) : bool
+    + <<override>> GetHashCode() : int
+}
+Shape <|-- Cuboid
+Cuboid --> "A" Vertex
+Cuboid --> "B" Vertex
+Cuboid --> "C" Vertex
+Cuboid --> "D" Vertex
+Cuboid --> "E" Vertex
+Cuboid --> "F" Vertex
+Cuboid --> "G" Vertex
+Cuboid --> "H" Vertex
+@enduml

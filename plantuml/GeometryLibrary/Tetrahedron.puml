@@ -1,0 +1,15 @@
+@startuml
+class Tetrahedron {
+    + Tetrahedron()
+    + Tetrahedron(other:Tetrahedron)
+    + Centroid() : Vertex
+    + <<override>> SurfaceArea() : double
+    + <<override>> Volume() : double
+    + <<override>> Equals(obj:object?) : bool
+}
+Shape <|-- Tetrahedron
+Tetrahedron --> "A" Vertex
+Tetrahedron --> "B" Vertex
+Tetrahedron --> "C" Vertex
+Tetrahedron --> "D" Vertex
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+struct Vertex {
+    + X : double <<get>>
+    + Y : double <<get>>
+    + Z : double <<get>>
+    + Vertex(x:double, y:double, z:double)
+    + <<override>> Equals(obj:object?) : bool
+}
+@enduml

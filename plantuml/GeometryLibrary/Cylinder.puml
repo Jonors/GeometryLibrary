@@ -1,0 +1,15 @@
+@startuml
+class Cylinder {
+    + Radius : double <<get>>
+    + Cylinder()
+    + Cylinder(other:Cylinder)
+    + Height() : double
+    + BottomArea() : double
+    + <<override>> SurfaceArea() : double
+    + <<override>> Volume() : double
+    + <<override>> Equals(obj:object?) : bool
+}
+Shape <|-- Cylinder
+Cylinder --> "Base1" Vertex
+Cylinder --> "Base2" Vertex
+@enduml

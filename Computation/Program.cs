@@ -23,7 +23,7 @@ namespace Computation
 
             // Adding two shapes together returns a brand new CompositeShape.
             // This is "Invisible" logic—the user just uses '+' and the library handles the rest.
-            Console.WriteLine("\n>>> 2. COMBINING SHAPES (tet + cub):");
+            Console.WriteLine("\n>>> 2. COMBINING SHAPES:");
             CompositeShape myComposite = tet + cub;
 
             // We can even add a third one to the composite we just made!
@@ -39,7 +39,9 @@ namespace Computation
             myComposite.Sort();
             for (int i = 0; i < myComposite.Count; i++)
             {
-                Console.WriteLine($"Index [{i}]: {myComposite[i].Name} (Vol: {myComposite[i].Volume():F2})");
+                Console.WriteLine(
+                    $"Index [{i}]: {myComposite[i].Name} (Vol: {myComposite[i].Volume():F2})"
+                );
             }
 
             // We search for our original 'cub' in the now-sorted list.
@@ -59,7 +61,9 @@ namespace Computation
                 {
                     Cuboid cubClone = new Cuboid(originalCuboid);
                     Console.WriteLine($"Successfully cloned the Cuboid from index {foundIndex}.");
-                    Console.WriteLine($"Clone Centroid: ({cubClone.Centroid().X:F2}, {cubClone.Centroid().Y:F2}, {cubClone.Centroid().Z:F2})");
+                    Console.WriteLine(
+                        $"Clone Centroid: ({cubClone.Centroid().X:F2}, {cubClone.Centroid().Y:F2}, {cubClone.Centroid().Z:F2})"
+                    );
                 }
             }
 
@@ -68,13 +72,14 @@ namespace Computation
             Console.WriteLine("====================================================");
         }
 
-
         /// A helper to print the shared attributes of any Shape.
         static void PrintShapeSummary(Shape s)
         {
-            Console.WriteLine($"- {s.Name,-12} | Vol: {s.Volume(),10:F2} | Area: {s.SurfaceArea(),10:F2}");
+            Console.WriteLine(
+                $"- {s.Name, -12} | Vol: {s.Volume(), 10:F2} | Area: {s.SurfaceArea(), 10:F2}"
+            );
 
-            // Using pattern matching to dynamically access the Centroid method, 
+            // Using pattern matching to dynamically access the Centroid method,
             // since the base Shape class doesn't enforce a Centroid.
             if (s is Tetrahedron t)
             {
